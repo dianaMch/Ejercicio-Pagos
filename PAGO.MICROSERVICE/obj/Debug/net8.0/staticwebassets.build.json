@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "kIslIsloCLDoBQf7SwGTtvvDw4hxFntLRYulgG0C+dc=",
+  "Source": "PAGO.MICROSERVICE",
+  "BasePath": "_content/PAGO.MICROSERVICE",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

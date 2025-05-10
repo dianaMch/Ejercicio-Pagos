@@ -1,0 +1,6 @@
+@PAGO.MICROSERVICE_HostAddress = http://localhost:5200
+
+GET {{PAGO.MICROSERVICE_HostAddress}}/microservice/
+Accept: application/json
+
+###

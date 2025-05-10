@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "I/S0t5LrIxzEfrPEQbGu/T8oxmQejlgh91fIJoTmSBU=",
+  "Source": "PAGO.API",
+  "BasePath": "_content/PAGO.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

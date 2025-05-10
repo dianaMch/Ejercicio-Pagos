@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "PAGO.API.Controllers.AuthController",
+    "Method": "Logeo",
+    "RelativePath": "api/auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDataInput",
+        "Type": "PAGO.API.Models.LoginDataInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PAGO.API.Controllers.PagoController",
+    "Method": "GeneraPago",
+    "RelativePath": "api/pagos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postDataInput",
+        "Type": "PAGO.API.Models.PostDataInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PAGO.API.Controllers.PagoController",
+    "Method": "ActualizaEstado",
+    "RelativePath": "api/pagos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "putPagoDataInput",
+        "Type": "PAGO.API.Models.PutPagoDataInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PAGO.API.Controllers.PagoController",
+    "Method": "ConsultaEstado",
+    "RelativePath": "api/pagos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

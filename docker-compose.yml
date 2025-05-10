@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: ${SA_PASSWORD}
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - sqlnet
+
+  sql-init:
+    image: mcr.microsoft.com/mssql-tools
+    container_name: sql-init
+    depends_on:
+      - sqlserver
+    volumes:
+      - ./init.sql:/init.sql
+    entrypoint: >
+      bash -c "
+      sleep 20 &&
+      /opt/mssql-tools/bin/sqlcmd -S sqlserver -U SA -P '${SA_PASSWORD}' -i /init.sql
+      "
+    networks:
+      - sqlnet
+
+  pago-microservice:
+    build: ./PAGO.MICROSERVICE
+    container_name: pago-microservice
+    ports:
+      - "5000:80"
+    depends_on:
+      - sql-init
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=${DB_NAME};User ID=sa;Password=${SA_PASSWORD};TrustServerCertificate=True;"
+      Jwt__Key: ${JWT_SECRET}
+      Jwt__ValidationParameters: ${JWT_VALIDATION}
+    networks:
+      - sqlnet
+
+  pago-api:
+    build: ./PAGO.API
+    container_name: pago-api
+    ports:
+      - "5100:80"
+    depends_on:
+      - pago-microservice
+      - sql-init
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=${DB_NAME};User ID=sa;Password=${SA_PASSWORD};TrustServerCertificate=True;"
+      Jwt__Key: ${JWT_SECRET}
+      Jwt__ValidationParameters: ${JWT_VALIDATION}
+      URLs__PagoMicroservice: "http://pago-microservice"
+      Auth__User: "administrador"
+      Auth__Pass: "123"
+      URLs__ActualizaEstado: "http://${IP_IIS}/PagoWebService/PagoService.asmx"
+      URLs__ConsultaEstado: "http://${IP_IIS}/PagoWebServiceWcf/PagoService.svc"
+      URLs__GeneraPago: "http://pago-microservice:80/api/pagos/productos/{0}"
+    networks:
+      - sqlnet
+
+volumes:
+  sqlserver_data:
+
+networks:
+  sqlnet:

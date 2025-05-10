@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PAGO.SERVICE",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/pagos/{id}/estatus": {
+      "get": {
+        "tags": [
+          "PAGO.SERVICE"
+        ],
+        "operationId": "GetEstado",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

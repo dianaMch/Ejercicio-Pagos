@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8846E41-37F0-4616-8A23-D70388214B7A}|PAGO.WEBSERVICE.csproj|d:\\documentos\\diana\\ejercicio\\pago.webservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E8846E41-37F0-4616-8A23-D70388214B7A}|PAGO.WEBSERVICE.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8846E41-37F0-4616-8A23-D70388214B7A}|PAGO.WEBSERVICE.csproj|D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\pagoservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8846E41-37F0-4616-8A23-D70388214B7A}|PAGO.WEBSERVICE.csproj|solutionrelative:pagoservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8846E41-37F0-4616-8A23-D70388214B7A}|PAGO.WEBSERVICE.csproj|D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\data\\pagosbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8846E41-37F0-4616-8A23-D70388214B7A}|PAGO.WEBSERVICE.csproj|solutionrelative:data\\pagosbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagosBDContext.cs",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\Data\\PagosBDContext.cs",
+              "RelativeDocumentMoniker": "Data\\PagosBDContext.cs",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\Data\\PagosBDContext.cs",
+              "RelativeToolTip": "Data\\PagosBDContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:29:43.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PagoService.asmx.cs",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\PagoService.asmx.cs",
+              "RelativeDocumentMoniker": "PagoService.asmx.cs",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\PagoService.asmx.cs",
+              "RelativeToolTip": "PagoService.asmx.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:29:25.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-09T07:07:45.372Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

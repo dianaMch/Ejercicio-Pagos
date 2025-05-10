@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAGO.WEBSERVICE.WCF", "PAGO.WEBSERVICE.WCF.csproj", "{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1056D09-6189-4592-AC89-CA55AC1B9C3B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "57946e1e-d1ed-4d7b-bc8c-a086b0955c0d",
+		"name": "EJERCICIO-PAGOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30028473"
+	},
+	"item": [
+		{
+			"name": "PETICIONES AL SERVICIO PRINCIPAL",
+			"item": [
+				{
+					"name": "ALTA DE PAGO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluaXN0cmFkb3IiLCJuYmYiOjE3NDY4MTU0NjMsImV4cCI6MTc0NjgxOTA2MywiaWF0IjoxNzQ2ODE1NDYzLCJpc3MiOiJQYWdvQXBpMTIzIiwiYXVkIjoiUGFnb0FwaTEyMyJ9.AjekCByuUKDItIiEm2ziYbF-LHSRwaW0Rb_fivqOztI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"remitente\": 10002,\r\n  \"destinatario\": 10001,\r\n  \"productos\": [\r\n    {\r\n      \"idProducto\": 1000,\r\n      \"cantidad\": 1\r\n    },\r\n    {\r\n      \"idProducto\": 1001,\r\n      \"cantidad\": 2\r\n    }\r\n  ],\r\n  \"TotalProductos\" : 3,\r\n  \"MontoTotal\" : 1750,\r\n  \"concepto\": \"Compra de equipo de oficina\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5100/api/pagos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"pagos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZA ESTADO DE PAGO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluaXN0cmFkb3IiLCJuYmYiOjE3NDY4MTU0NjMsImV4cCI6MTc0NjgxOTA2MywiaWF0IjoxNzQ2ODE1NDYzLCJpc3MiOiJQYWdvQXBpMTIzIiwiYXVkIjoiUGFnb0FwaTEyMyJ9.AjekCByuUKDItIiEm2ziYbF-LHSRwaW0Rb_fivqOztI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"IdPago\": 10000,\r\n  \"Estado\": \"Pagado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5100/api/pagos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"pagos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONSULTA ESTADO DE PAGO",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluaXN0cmFkb3IiLCJuYmYiOjE3NDY3ODQwNjEsImV4cCI6MTc0Njc4NzY2MSwiaWF0IjoxNzQ2Nzg0MDYxLCJpc3MiOiJQYWdvQXBpMTIzIiwiYXVkIjoiUGFnb0FwaTEyMyJ9.Oznl8fbB54sxDi8n6jwVbxoz8THDlYhAdW6ZDTX4q64",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5089/api/pagos/10000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5089",
+							"path": [
+								"api",
+								"pagos",
+								"10000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AUTENTICACION",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"usuario\": \"administrador\",\r\n  \"contraseña\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5100/api/Auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5100",
+							"path": [
+								"api",
+								"Auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PETICIONES DIRECTAS A LOS SERVICIOS",
+			"item": [
+				{
+					"name": "CONSULTA ESTADO DE PAGO - WCF",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluaXN0cmFkb3IiLCJuYmYiOjE3NDY3ODQwNjEsImV4cCI6MTc0Njc4NzY2MSwiaWF0IjoxNzQ2Nzg0MDYxLCJpc3MiOiJQYWdvQXBpMTIzIiwiYXVkIjoiUGFnb0FwaTEyMyJ9.Oznl8fbB54sxDi8n6jwVbxoz8THDlYhAdW6ZDTX4q64",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8",
+								"type": "default"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/IPagoService/ConsultaEstatus",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <ConsultaEstatus xmlns=\"http://tempuri.org/\">\r\n      <IdPago>10000</IdPago>\r\n    </ConsultaEstatus>\r\n  </soap:Body>\r\n</soap:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:50989/PagoService.svc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "50989",
+							"path": [
+								"PagoService.svc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZA ESTADO DE PAGO - WEB SERVICE",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluaXN0cmFkb3IiLCJuYmYiOjE3NDY3ODAwOTIsImV4cCI6MTc0Njc4MzY5MSwiaWF0IjoxNzQ2NzgwMDkyLCJpc3MiOiJQYWdvQXBpMTIzIiwiYXVkIjoiUGFnb0FwaTEyMyJ9.kJYWEqjPsYSPYu8H3ulMk6adGI-erIePAagPydsRhds",
+								"type": "default"
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8",
+								"type": "default"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/ActualizaEstadoPago",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <ActualizaEstadoPago xmlns=\"http://tempuri.org/\">\r\n      <IdPago>10000</IdPago>\r\n      <Estado>Pendiente</Estado>\r\n    </ActualizaEstadoPago>\r\n  </soap:Body>\r\n</soap:Envelope>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44387/PagoService.asmx",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44387",
+							"path": [
+								"PagoService.asmx"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CONSULTA PRODUCTOS - MINIMAL API",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluaXN0cmFkb3IiLCJuYmYiOjE3NDY4MTU0NjMsImV4cCI6MTc0NjgxOTA2MywiaWF0IjoxNzQ2ODE1NDYzLCJpc3MiOiJQYWdvQXBpMTIzIiwiYXVkIjoiUGFnb0FwaTEyMyJ9.AjekCByuUKDItIiEm2ziYbF-LHSRwaW0Rb_fivqOztI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "SOAPAction",
+								"value": "http://tempuri.org/IService1/GetData",
+								"type": "default",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/pagos/productos/1000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"pagos",
+								"productos",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

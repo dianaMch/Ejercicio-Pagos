@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PAGO.MICROSERVICE",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/pagos/productos/{id}": {
+      "get": {
+        "tags": [
+          "PAGO.MICROSERVICE"
+        ],
+        "operationId": "ConsultaProducto",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

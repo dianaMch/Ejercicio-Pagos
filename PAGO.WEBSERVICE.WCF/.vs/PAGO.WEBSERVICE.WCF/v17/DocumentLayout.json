@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|d:\\documentos\\diana\\ejercicio\\pago.webservice.wcf\\data\\jwtvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|solutionrelative:data\\jwtvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\pagoservice.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|solutionrelative:pagoservice.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\ipagoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|solutionrelative:ipagoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\pagoservice.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}",
+      "RelativeMoniker": "D:0:0:{7C337E4C-0ED1-4C9B-8B23-CA64ABF29699}|PAGO.WEBSERVICE.WCF.csproj|solutionrelative:pagoservice.svc||{FB9167C9-D3B8-4EDA-8083-9AF6B6F6DA62}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtValidator.cs",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\data\\JwtValidator.cs",
+              "RelativeDocumentMoniker": "data\\JwtValidator.cs",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\data\\JwtValidator.cs",
+              "RelativeToolTip": "data\\JwtValidator.cs",
+              "ViewState": "AgIAAAkAAAAAMjMzMzMdwBQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T00:38:10.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagoService.svc",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\PagoService.svc",
+              "RelativeDocumentMoniker": "PagoService.svc",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\PagoService.svc",
+              "RelativeToolTip": "PagoService.svc",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
+              "WhenOpened": "2025-05-09T06:31:56.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagoService.svc.cs",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\PagoService.svc.cs",
+              "RelativeDocumentMoniker": "PagoService.svc.cs",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\PagoService.svc.cs",
+              "RelativeToolTip": "PagoService.svc.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAewBIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T06:29:54.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPagoService.cs",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\IPagoService.cs",
+              "RelativeDocumentMoniker": "IPagoService.cs",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\IPagoService.cs",
+              "RelativeToolTip": "IPagoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T06:28:24.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\Documentos\\Diana\\EJERCICIO\\PAGO.WEBSERVICE.WCF\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-09T06:21:03.458Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
